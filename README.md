@@ -315,7 +315,7 @@ class DoRALayer(nn.Module):
 
 In fact, using trained models to make predictions about new data is a more technical term in machine learning engineering called "Inference." The following diagram details the training and reasoning process of a neural network model. The prediction of new input data by a neural network built through a training set is inference.
 
-![](.\images\document-uid214893labid7506timestamp1553237955368.png)
+![](images\document-uid214893labid7506timestamp1553237955368.png)
 
 In general, reasoning can be divided into static reasoning and dynamic reasoning.
 
@@ -483,7 +483,7 @@ Want-list {
 
 To find a peer that owns a file, a node running the Bitswap protocol first sends a request called "Want to own" to all of its connected peers. This "want to have" request contains the CID of the root block of the file (the root block is at the top of the DAG of the blocks that make up the file). The peer that owns the root block sends a "own" response and is added to the session. The peer that does not have the block sends a "do not own" response. Bitswap builds a map showing which nodes own each block and which nodes don't.
 
-![](.\images\diagram-of-the-want-have-want-block-process.6ef862a2.png)
+![](images\diagram-of-the-want-have-want-block-process.6ef862a2.png)
 
 Bitswap sends the desired block to the peers who own the block, and those peers respond with the block itself. If no peer has a root block, Bitswap queries the Distributed hash table (DHT) and asks who can provide the root block.
 
@@ -542,7 +542,7 @@ When a client request for a CID reaches the IPFS gateway, the gateway first chec
 
 In order to ensure the security of data, we restrict the authentication of the gateway's request. The interface provided by the gateway is authenticated through our sso-auth(Authentication Service) reverse proxy to the gateway request. The reverse proxy can also preserve the original IPFS API calls, enabling the gateway to accommodate all IPFS SDKS and toolkits. 
 
-![](.\images\public-authed-gateway.59d1f96a.png)
+![](images\public-authed-gateway.59d1f96a.png)
 
 Interplanetary Network Indexers (IPNI) (opens in new window), also known as Network indexers, indexers, and IPNI, are capable of quickly and efficiently searching content-addressable data available on Interplanetary file systems (IPFS) and Filecoin networks.
 
@@ -736,6 +736,6 @@ final loss: 133.26148346146633
 [<matplotlib.lines.Line2D at 0x156b4e470>]
 ```
 
-![](.\images\e654ab8321a17ad2b7332d795099f16ec1dca6f5177f68c2c8dc688366207125.png)
+![](images\e654ab8321a17ad2b7332d795099f16ec1dca6f5177f68c2c8dc688366207125.png)
 
 As can be seen, the loss function gradually decreases and approaches convergence, and the change curve is much smoother than the perceptron calculation. However, because we have removed the intercept term and the network structure is too simple, the convergence is not ideal. In addition, it is important to note that because the weights are randomly initialized, the results of multiple runs will be different.
