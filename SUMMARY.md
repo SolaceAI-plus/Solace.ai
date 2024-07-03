@@ -1,6 +1,6 @@
 # Table of contents
 
-* [REMARK](./README.md)
+* [README](./README.md)
 
 * [Solace.ai Whitepaper](./doc/white_paper/README.md)
 
