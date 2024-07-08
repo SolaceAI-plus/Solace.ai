@@ -1,6 +1,6 @@
 # Solace.ai Whitepaper
 
-![](../../.gitbook/assets/0.jpeg)
+![](.gitbook/assets/1.png)
 
 **Solace.ai**
 
@@ -8,7 +8,7 @@ Whitepaper
 
 **V1.1**
 
-**Solace.ai 1**\
+**Solace.ai 1**
 **1. Introduction 1**
 
 1.1 Project Vision 1
