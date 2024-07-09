@@ -1,6 +1,6 @@
 # Solace.ai Whitepaper
 
-![](.gitbook/assets/4.jpg)
+![](.gitbook/assets/3.png)
 
 **Solace.ai**
 
