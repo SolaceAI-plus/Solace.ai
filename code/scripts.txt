@@ -1,0 +1,8 @@
+npx circom circuits/hash.circom --r1cs --wasm --sym -o zk/
+
+// trusted setup：
+snarkjs groth16 setup zk/hash.r1cs pot12_final.ptau zk/hash_0000.zkey
+snarkjs zkey contribute zk/hash_0000.zkey zk/hash_final.zkey --name="Contributor"
+
+node zk/hash_js/generate_witness.js zk/hash_js/hash.wasm input.json witness.wtns
+snarkjs groth16 prove zk/hash_final.zkey witness.wtns zk/proof.json zk/public.json
